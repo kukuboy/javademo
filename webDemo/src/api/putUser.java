@@ -30,7 +30,7 @@ public class putUser extends HttpServlet {
         List<user> user = new ArrayList<>();
         Connection dbConn = null;
         try {
-            String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+            String driverName = "com.mysql.jdbc.Driver";
             Class.forName(driverName);//反射JDBC包，这个一定要加，不然会报错
             // 设置响应内容类型
             response.setContentType("text/html");
