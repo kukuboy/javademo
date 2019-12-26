@@ -2,12 +2,13 @@ package db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Statement;
 
 public class mysqlConn {
-    public Connection getConnection(){
+
+    public static Connection getConnection(){
         Connection conn = null;//连接的实体
         try {
-            Class.forName("com.mysql.jdbc.Driver");
             System.out.println("数据库驱动加载完成");
             String url = "jdbc:mysql://localhost:3306/mydemo";
             String user="root";
