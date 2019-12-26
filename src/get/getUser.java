@@ -15,6 +15,7 @@ public class getUser {
         ResultSet resultSet = statement.executeQuery(sql);
         while (resultSet.next()) {
             System.out.println(resultSet.getString("name"));
+            System.out.println(resultSet.getString("passWord"));
         }
     }
 }
