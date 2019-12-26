@@ -1,0 +1,2 @@
+webpackJsonp([13],{Bjpf:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var s={render:function(){var t=this.$createElement;return(this._self._c||t)("div",{attrs:{id:"stocks"}},[this._v("\n  个股\n")])},staticRenderFns:[]};var i=n("VU/8")({name:"stocks"},s,!1,function(t){n("wbiu")},"data-v-78d05f0c",null);e.default=i.exports},wbiu:function(t,e){}});
+//# sourceMappingURL=13.00aa6a28593d8cad6caf.js.map

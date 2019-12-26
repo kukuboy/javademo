@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class mysqlConn {
     public Connection getConnection(){
-        Connection conn;
+        Connection conn = null;//连接的实体
         try {
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("数据库驱动加载完成");

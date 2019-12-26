@@ -1,0 +1,32 @@
+package wenlipackage;
+syntax = "proto3";
+
+import "Event.proto";
+import "Msg.proto";
+option java_package = "com.myhexin.api.advisor.dto.protobuf";
+option java_outer_classname = "MessageProtocolDto";
+
+//消息通信协议
+message MessageProtocol {
+    //请求序列号，用于客户端来维护请求消息，暂未使用
+    string sequence = 1;
+    //模块号
+    int32 module = 2;
+    //指令号
+    int32 cmd = 3;
+    //客户端请求、服务端响应、服务端通知（1、2、3）
+    int32 type = 4;
+    //响应编码
+    int32 code = 5;
+    //数据，消息/事件
+    oneof data {
+        //文本消息
+        Msg msg = 6;
+        //链接消息
+        Event event = 7;
+    }
+    //服务节点id
+    string serverId = 8;
+    //流水号，由服务端产生，每个信息对应一个唯一标识
+    string seriaNumber = 9;
+}
