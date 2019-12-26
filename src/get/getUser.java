@@ -15,9 +15,6 @@ public class getUser {
         ResultSet resultSet = statement.executeQuery(sql);
         while (resultSet.next()) {
             System.out.println(resultSet.getString("name"));
-            user st = new user();
-            st.setName(resultSet.getString("Sname"));
-            st.setPhone(resultSet.getString("12313"));
         }
     }
 }
