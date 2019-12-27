@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Demo">
+    <output-path>$PROJECT_DIR$/out/artifacts/Demo</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="webDemo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webDemo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="fastjson-1.2.621" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.181" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.18" />
+          <element id="library" level="project" name="fastjson-1.2.62" />
+          <element id="file-copy" path="$PROJECT_DIR$/webDemo/web/WEB-INF/lib/fastjson-1.2.62.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/webDemo/web/WEB-INF/lib/javax.servlet-api-4.0.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/webDemo/web/WEB-INF/lib/mysql-connector-java-8.0.18.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

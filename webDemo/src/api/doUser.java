@@ -2,10 +2,9 @@ package api;
 
 import com.alibaba.fastjson.JSONObject;
 import data.user;
-import dbconn.dbconn;
+import DB.mySql;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,17 +16,18 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/doUser")
 public class doUser extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String sql = "select * from user";
-        Connection conn = dbconn.getConnection();
+        Connection conn = mySql.getConnection();
         List<user> user = new ArrayList<>();
         try {
-            String driverName = "com.mysql.jdbc.Driver";
+            String driverName = "com.mysql.cj.jdbc.Driver";
             Class.forName(driverName);//反射JDBC包，这个一定要加，不然会报错
             // 设置响应内容类型
+            String name = request.getQueryString();
+            System.out.println(name);
             response.setContentType("text/html");
             response.setCharacterEncoding("UTF-8");
             Statement statement = conn.createStatement();

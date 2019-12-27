@@ -32,5 +32,11 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="javax.servlet-api-4.0.1" level="project" />
+    <orderEntry type="library" name="fastjson-1.2.62" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.18" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.181" level="project" />
+    <orderEntry type="library" name="javax.servlet-api-4.0.11" level="project" />
+    <orderEntry type="library" name="fastjson-1.2.621" level="project" />
   </component>
 </module>
